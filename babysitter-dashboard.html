@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf7f1">
+  <title>Petit Cocon — Espace Baby-sitter</title>
+  <link rel="stylesheet" href="css/babysitter-dashboard.css">
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- Navigation mobile -->
+    <nav class="bottom-nav" aria-label="Navigation principale">
+      <button class="nav-item is-active" type="button" data-view="accueil">
+        <span class="nav-icon">⌂</span>
+        <span>Accueil</span>
+      </button>
+      <button class="nav-item" type="button" data-view="demandes">
+        <span class="nav-icon">▣</span>
+        <span>Demandes</span>
+        <span class="nav-badge">3</span>
+      </button>
+      <button class="nav-item" type="button" data-view="messages">
+        <span class="nav-icon">◌</span>
+        <span>Messages</span>
+        <span class="nav-badge nav-badge--dark">2</span>
+      </button>
+      <button class="nav-item" type="button" data-view="profil">
+        <span class="nav-icon">♙</span>
+        <span>Profil</span>
+      </button>
+    </nav>
+
+    <aside class="sidebar" aria-label="Menu de l'espace baby-sitter">
+      <div class="brand">
+        <div class="brand-mark">PC</div>
+        <div>
+          <strong>Petit Cocon</strong>
+          <span>Espace Baby-sitter</span>
+        </div>
+      </div>
+
+      <div class="sidebar-profile">
+        <div class="avatar avatar--large">MD</div>
+        <div>
+          <strong>Marie Dupont</strong>
+          <span class="online-status"><i></i> En ligne</span>
+        </div>
+      </div>
+
+      <div class="sidebar-menu">
+        <button class="side-item is-active" type="button" data-view="accueil">⌂ <span>Tableau de bord</span></button>
+        <button class="side-item" type="button" data-view="profil">♙ <span>Mon profil</span></button>
+        <button class="side-item" type="button" data-view="disponibilites">▣ <span>Mes disponibilités</span></button>
+        <button class="side-item" type="button" data-view="demandes">◫ <span>Mes demandes</span><b>3</b></button>
+        <button class="side-item" type="button" data-view="messages">◌ <span>Mes conversations</span><b>2</b></button>
+        <button class="side-item" type="button" data-view="planning">▦ <span>Mon planning</span></button>
+        <button class="side-item" type="button" data-view="parametres">⚙ <span>Paramètres</span></button>
+      </div>
+
+      <button class="logout" type="button">↪ <span>Se déconnecter</span></button>
+    </aside>
+
+    <main class="main-content">
+      <header class="mobile-header">
+        <div class="brand">
+          <div class="brand-mark">PC</div>
+          <div>
+            <strong>Petit Cocon</strong>
+            <span>Espace Baby-sitter</span>
+          </div>
+        </div>
+        <button class="notification-button" type="button" aria-label="Notifications">
+          ♧
+          <span></span>
+        </button>
+      </header>
+
+      <section class="page" id="accueil" data-page>
+        <div class="page-heading">
+          <div>
+            <p class="eyebrow">Mon espace</p>
+            <h1>Bonjour Marie <span>👋</span></h1>
+            <p class="heading-text">Voici un aperçu de votre activité aujourd’hui.</p>
+          </div>
+          <div class="desktop-status">
+            <span class="status-dot"></span>
+            Disponible
+          </div>
+        </div>
+
+        <section class="stats-grid" aria-label="Résumé de l'activité">
+          <article class="stat-card">
+            <div class="stat-icon">▣</div>
+            <strong>3</strong>
+            <span>Nouvelles demandes</span>
+            <a href="#" data-view-link="demandes">Voir les demandes →</a>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">◌</div>
+            <strong>2</strong>
+            <span>Messages non lus</span>
+            <a href="#" data-view-link="messages">Ouvrir les messages →</a>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon">▦</div>
+            <strong>1</strong>
+            <span>Prochaine garde</span>
+            <a href="#" data-view-link="planning">Voir le planning →</a>
+          </article>
+        </section>
+
+        <div class="content-grid">
+          <section class="panel upcoming-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">À venir</p>
+                <h2>Ma prochaine garde</h2>
+              </div>
+              <button class="text-button" type="button" data-view-link="planning">Voir tout</button>
+            </div>
+
+            <article class="booking-card">
+              <div class="booking-date">
+                <span>JUIN</span>
+                <strong>14</strong>
+                <small>SAM.</small>
+              </div>
+
+              <div class="booking-info">
+                <div class="person-line">
+                  <div class="avatar">SL</div>
+                  <div>
+                    <strong>Sophie Lambert</strong>
+                    <span>Garde de Léo · 3 ans</span>
+                  </div>
+                </div>
+
+                <div class="booking-details">
+                  <span>16h00 — 19h00</span>
+                  <span>📍 Paris 15e</span>
+                </div>
+
+                <span class="pill pill--success">Confirmée</span>
+              </div>
+            </article>
+          </section>
+
+          <section class="panel action-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">À ne pas oublier</p>
+                <h2>Votre activité</h2>
+              </div>
+            </div>
+
+            <div class="activity-list">
+              <div class="activity-item">
+                <span class="activity-check">✓</span>
+                <div>
+                  <strong>Votre profil est visible</strong>
+                  <p>Les parents peuvent consulter votre profil.</p>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <span class="activity-check">✓</span>
+                <div>
+                  <strong>Vos disponibilités sont à jour</strong>
+                  <p>Pensez à les modifier dès que votre emploi du temps change.</p>
+                </div>
+              </div>
+
+              <button class="outline-button" type="button" data-view-link="disponibilites">
+                Modifier mes disponibilités
+              </button>
+            </div>
+          </section>
+        </div>
+
+        <section class="welcome-card">
+          <div class="welcome-copy">
+            <p class="eyebrow">Petit Cocon</p>
+            <h2>Chaque garde compte.</h2>
+            <p>Votre attention et votre bienveillance contribuent à créer un environnement rassurant pour chaque enfant.</p>
+          </div>
+          <div class="welcome-illustration" aria-hidden="true">♡</div>
+        </section>
+      </section>
+
+      <!-- Les autres vues seront construites et validées une par une. -->
+      <section class="placeholder-page" id="demandes" data-page hidden>
+        <p class="eyebrow">Prochaine fonctionnalité</p>
+        <h1>Mes demandes</h1>
+        <p>Cette vue sera construite à l'étape suivante.</p>
+      </section>
+
+      <section class="placeholder-page" id="messages" data-page hidden>
+        <p class="eyebrow">Prochaine fonctionnalité</p>
+        <h1>Mes conversations</h1>
+        <p>Cette vue sera construite à l'étape suivante.</p>
+      </section>
+
+      <section class="placeholder-page" id="profil" data-page hidden>
+        <p class="eyebrow">Prochaine fonctionnalité</p>
+        <h1>Mon profil</h1>
+        <p>Cette vue sera construite à l'étape suivante.</p>
+      </section>
+
+      <section class="placeholder-page" id="disponibilites" data-page hidden>
+        <p class="eyebrow">Prochaine fonctionnalité</p>
+        <h1>Mes disponibilités</h1>
+        <p>Cette vue sera construite à l'étape suivante.</p>
+      </section>
+
+      <section class="placeholder-page" id="planning" data-page hidden>
+        <p class="eyebrow">Prochaine fonctionnalité</p>
+        <h1>Mon planning</h1>
+        <p>Cette vue sera construite à l'étape suivante.</p>
+      </section>
+
+      <section class="placeholder-page" id="parametres" data-page hidden>
+        <p class="eyebrow">Prochaine fonctionnalité</p>
+        <h1>Paramètres</h1>
+        <p>Cette vue sera construite à l'étape suivante.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="../js/babysitter-dashboard.js"></script>
+</body>
+</html>
