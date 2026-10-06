@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#fbf7f1">
   <title>Petit Cocon — Espace Baby-sitter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
   <link rel="stylesheet" href="css/babysitter-dashboard.css">
 </head>
 <body>
@@ -13,21 +14,29 @@
     <!-- Navigation mobile -->
     <nav class="bottom-nav" aria-label="Navigation principale">
       <button class="nav-item is-active" type="button" data-view="accueil">
-        <span class="nav-icon">⌂</span>
+        <span class="nav-icon">
+    <i class="fa-solid fa-house"></i>
+</span>
         <span>Accueil</span>
       </button>
       <button class="nav-item" type="button" data-view="demandes">
-        <span class="nav-icon">▣</span>
+        <span class="nav-icon">
+    <i class="fa-regular fa-file-lines"></i>
+</span>
         <span>Demandes</span>
         <span class="nav-badge">3</span>
       </button>
       <button class="nav-item" type="button" data-view="messages">
-        <span class="nav-icon">◌</span>
+        <span class="nav-icon">
+    <i class="fa-regular fa-comments"></i>
+</span>
         <span>Messages</span>
         <span class="nav-badge nav-badge--dark">2</span>
       </button>
       <button class="nav-item" type="button" data-view="profil">
-        <span class="nav-icon">♙</span>
+        <span class="nav-icon">
+    <i class="fa-regular fa-user"></i>
+</span>
         <span>Profil</span>
       </button>
     </nav>
@@ -50,16 +59,16 @@
       </div>
 
       <div class="sidebar-menu">
-        <button class="side-item is-active" type="button" data-view="accueil">⌂ <span>Tableau de bord</span></button>
-        <button class="side-item" type="button" data-view="profil">♙ <span>Mon profil</span></button>
-        <button class="side-item" type="button" data-view="disponibilites">▣ <span>Mes disponibilités</span></button>
-        <button class="side-item" type="button" data-view="demandes">◫ <span>Mes demandes</span><b>3</b></button>
-        <button class="side-item" type="button" data-view="messages">◌ <span>Mes conversations</span><b>2</b></button>
-        <button class="side-item" type="button" data-view="planning">▦ <span>Mon planning</span></button>
-        <button class="side-item" type="button" data-view="settings">⚙ <span>Paramètres</span></button>
+        <button class="side-item is-active" type="button" data-view="accueil"><i class="fa-solid fa-house"></i> <span>Tableau de bord</span></button>
+        <button class="side-item" type="button" data-view="profil"><i class="fa-regular fa-user"></i> <span>Mon profil</span></button>
+        <button class="side-item" type="button" data-view="disponibilites"><i class="fa-regular fa-calendar-check"></i> <span>Mes disponibilités</span></button>
+        <button class="side-item" type="button" data-view="demandes"><i class="fa-regular fa-file-lines"></i> <span>Mes demandes</span><b>3</b></button>
+        <button class="side-item" type="button" data-view="messages"><i class="fa-regular fa-comments"></i> <span>Mes conversations</span><b>2</b></button>
+        <button class="side-item" type="button" data-view="planning"><i class="fa-regular fa-calendar-days"></i> <span>Mon planning</span></button>
+        <button class="side-item" type="button" data-view="settings"><i class="fa-solid fa-gear"></i> <span>Paramètres</span></button>
       </div>
 
-      <button class="logout" type="button">↪ <span>Se déconnecter</span></button>
+      <button class="logout" type="button"><i class="fa-solid fa-right-from-bracket"></i> <span>Se déconnecter</span></button>
     </aside>
 
     <main class="main-content">
@@ -72,7 +81,7 @@
           </div>
         </div>
         <button class="notification-button" type="button" aria-label="Notifications">
-          ♧
+          <i class="fa-regular fa-bell"></i>
           <span></span>
         </button>
       </header>
@@ -81,7 +90,7 @@
         <div class="page-heading">
           <div>
             <p class="eyebrow">Mon espace</p>
-            <h1>Bonjour Marie <span>👋</span></h1>
+            <h1>Bonjour Marie</h1>
             <p class="heading-text">Voici un aperçu de votre activité aujourd’hui.</p>
           </div>
           <div class="desktop-status">
@@ -92,21 +101,21 @@
 
         <section class="stats-grid" aria-label="Résumé de l'activité">
           <article class="stat-card">
-            <div class="stat-icon">▣</div>
+            <div class="stat-icon"><i class="fa-regular fa-calendar-check"></i></div>
             <strong>3</strong>
             <span>Nouvelles demandes</span>
             <a href="#" data-view-link="demandes">Voir les demandes →</a>
           </article>
 
           <article class="stat-card">
-            <div class="stat-icon">◌</div>
+            <div class="stat-icon"><i class="fa-regular fa-comments"></i></div>
             <strong>2</strong>
             <span>Messages non lus</span>
             <a href="#" data-view-link="messages">Ouvrir les messages →</a>
           </article>
 
           <article class="stat-card">
-            <div class="stat-icon">▦</div>
+            <div class="stat-icon"><i class="fa-regular fa-calendar-days"></i></div>
             <strong>1</strong>
             <span>Prochaine garde</span>
             <a href="#" data-view-link="planning">Voir le planning →</a>
@@ -141,7 +150,10 @@
 
                 <div class="booking-details">
                   <span>16h00 — 19h00</span>
-                  <span>📍 Paris 15e</span>
+                  <span>
+    <i class="fa-solid fa-location-dot"></i>
+    Paris 15e
+</span>
                 </div>
 
                 <span class="pill pill--success">Confirmée</span>
@@ -159,7 +171,7 @@
 
             <div class="activity-list">
               <div class="activity-item">
-                <span class="activity-check">✓</span>
+                <span class="activity-check"><i class="fa-solid fa-circle-check"></i></span>
                 <div>
                   <strong>Votre profil est visible</strong>
                   <p>Les parents peuvent consulter votre profil.</p>
@@ -167,7 +179,7 @@
               </div>
 
               <div class="activity-item">
-                <span class="activity-check">✓</span>
+                <span class="activity-check"><i class="fa-solid fa-circle-check"></i></span>
                 <div>
                   <strong>Vos disponibilités sont à jour</strong>
                   <p>Pensez à les modifier dès que votre emploi du temps change.</p>
@@ -187,7 +199,7 @@
             <h2>Chaque garde compte.</h2>
             <p>Votre attention et votre bienveillance contribuent à créer un environnement rassurant pour chaque enfant.</p>
           </div>
-          <div class="welcome-illustration" aria-hidden="true">♡</div>
+          <div class="welcome-illustration" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
         </section>
       </section>
 
@@ -283,22 +295,22 @@
             <div class="request-info">
 
                 <div>
-                    📅
+                    <i class="fa-regular fa-calendar-days"></i>
                     Samedi 14 Juin
                 </div>
 
                 <div>
-                    🕓
+                    <i class="fa-regular fa-clock"></i>
                     16h00 - 19h00
                 </div>
 
                 <div>
-                    📍
+                    <i class="fa-solid fa-location-dot"></i>
                     Paris 15e
                 </div>
 
                 <div>
-                    💶
+                    <i class="fa-solid fa-euro-sign"></i>
                     15 €/h
                 </div>
 
@@ -372,7 +384,7 @@
             <div class="request-info">
 
                 <div>
-                    📅
+                    <i class="fa-regular fa-calendar-days"></i>
                     Mardi 17 Juin
                 </div>
 
@@ -382,12 +394,12 @@
                 </div>
 
                 <div>
-                    📍
+                    <i class="fa-solid fa-location-dot"></i>
                     Paris 16e
                 </div>
 
                 <div>
-                    💶
+                    <i class="fa-solid fa-euro-sign"></i>
                     18 €/h
                 </div>
 
@@ -866,7 +878,7 @@ J'aime proposer des activités adaptées à l'âge des enfants.
 <section class="profile-shortcuts">
 
     <a href="#" data-view-link="planning" class="shortcut-card">
-        <span>📅 Mon planning</span>
+        <span><i class="fa-regular fa-calendar-days"></i> Mon planning</span>
     </a>
 
     <a href="#" data-view-link="disponibilites" class="shortcut-card">
@@ -874,7 +886,7 @@ J'aime proposer des activités adaptées à l'âge des enfants.
     </a>
 
     <a href="#" data-view-link="settings" class="shortcut-card">
-        <span>⚙️ Paramètres</span>
+        <span><i class="fa-solid fa-gear"></i>️ Paramètres</span>
     </a>
 
 </section>
@@ -1186,19 +1198,20 @@ J'aime proposer des activités adaptées à l'âge des enfants.
             <div class="planning-details">
 
                 <div>
-                    🕓 16h00 - 19h00
+                    <i class="fa-regular fa-clock"></i> 16h00 - 19h00
+                </div>
+
+               <div>
+    <i class="fa-solid fa-child-reaching"></i>
+    Léo • 3 ans
+</div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i> Paris 15e
                 </div>
 
                 <div>
-                    👶 Léo • 3 ans
-                </div>
-
-                <div>
-                    📍 Paris 15e
-                </div>
-
-                <div>
-                    💶 15 €/heure
+                    <i class="fa-solid fa-euro-sign"></i> 15 €/heure
                 </div>
 
             </div>
@@ -1267,20 +1280,22 @@ J'aime proposer des activités adaptées à l'âge des enfants.
 
             <div class="planning-details">
 
+              <div>
+    <i class="fa-regular fa-clock"></i>
+    18h30 - 22h00
+</div>
+
+               <div>
+    <i class="fa-solid fa-child-reaching"></i>
+    Emma • 6 ans
+</div>
+
                 <div>
-                    🕖 18h30 - 22h00
+                    <i class="fa-solid fa-location-dot"></i> Paris 16e
                 </div>
 
                 <div>
-                    👧 Emma • 6 ans
-                </div>
-
-                <div>
-                    📍 Paris 16e
-                </div>
-
-                <div>
-                    💶 18 €/heure
+                    <i class="fa-solid fa-euro-sign"></i> 18 €/heure
                 </div>
 
             </div>

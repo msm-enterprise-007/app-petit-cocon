@@ -2052,3 +2052,22 @@ h2 {
     color:var(--pc-orange);
 
 }
+
+.nav-icon i,
+.side-item i,
+.stat-icon i,
+.booking-details i,
+.activity-check i,
+.welcome-illustration i,
+.notification-button i{
+
+    font-size:18px;
+
+}
+
+.request-info i{
+    width:18px;
+    color:var(--pc-orange);
+    margin-right:8px;
+    text-align:center;
+}
