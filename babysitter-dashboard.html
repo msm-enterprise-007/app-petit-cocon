@@ -56,7 +56,7 @@
         <button class="side-item" type="button" data-view="demandes">◫ <span>Mes demandes</span><b>3</b></button>
         <button class="side-item" type="button" data-view="messages">◌ <span>Mes conversations</span><b>2</b></button>
         <button class="side-item" type="button" data-view="planning">▦ <span>Mon planning</span></button>
-        <button class="side-item" type="button" data-view="parametres">⚙ <span>Paramètres</span></button>
+        <button class="side-item" type="button" data-view="settings">⚙ <span>Paramètres</span></button>
       </div>
 
       <button class="logout" type="button">↪ <span>Se déconnecter</span></button>
@@ -192,44 +192,1256 @@
       </section>
 
       <!-- Les autres vues seront construites et validées une par une. -->
-      <section class="placeholder-page" id="demandes" data-page hidden>
-        <p class="eyebrow">Prochaine fonctionnalité</p>
-        <h1>Mes demandes</h1>
-        <p>Cette vue sera construite à l'étape suivante.</p>
-      </section>
+      <!-- ========================================= -->
+<!-- PAGE : MES DEMANDES -->
+<!-- ========================================= -->
 
-      <section class="placeholder-page" id="messages" data-page hidden>
-        <p class="eyebrow">Prochaine fonctionnalité</p>
-        <h1>Mes conversations</h1>
-        <p>Cette vue sera construite à l'étape suivante.</p>
-      </section>
+<section
+    class="page"
+    id="demandes"
+    data-page
+    hidden>
 
-      <section class="placeholder-page" id="profil" data-page hidden>
-        <p class="eyebrow">Prochaine fonctionnalité</p>
-        <h1>Mon profil</h1>
-        <p>Cette vue sera construite à l'étape suivante.</p>
-      </section>
+    <div class="page-heading">
 
-      <section class="placeholder-page" id="disponibilites" data-page hidden>
-        <p class="eyebrow">Prochaine fonctionnalité</p>
-        <h1>Mes disponibilités</h1>
-        <p>Cette vue sera construite à l'étape suivante.</p>
-      </section>
+        <div>
+            <p class="eyebrow">Mes demandes</p>
 
-      <section class="placeholder-page" id="planning" data-page hidden>
-        <p class="eyebrow">Prochaine fonctionnalité</p>
-        <h1>Mon planning</h1>
-        <p>Cette vue sera construite à l'étape suivante.</p>
-      </section>
+            <h1>Demandes de garde</h1>
 
-      <section class="placeholder-page" id="parametres" data-page hidden>
-        <p class="eyebrow">Prochaine fonctionnalité</p>
-        <h1>Paramètres</h1>
-        <p>Cette vue sera construite à l'étape suivante.</p>
-      </section>
+            <p class="heading-text">
+                Consultez les demandes envoyées par les parents et choisissez
+                celles qui correspondent à vos disponibilités.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- FILTRES -->
+    <!-- ========================= -->
+
+    <div class="request-filters">
+
+        <button class="filter-button active">
+            Toutes
+        </button>
+
+        <button class="filter-button">
+            En attente
+        </button>
+
+        <button class="filter-button">
+            Acceptées
+        </button>
+
+        <button class="filter-button">
+            Refusées
+        </button>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- DEMANDE 1 -->
+    <!-- ========================= -->
+
+    <article class="request-card">
+
+        <div class="request-header">
+
+            <div class="person-line">
+
+                <div class="avatar">
+                    SL
+                </div>
+
+                <div>
+
+                    <strong>
+                        Sophie Lambert
+                    </strong>
+
+                    <span>
+                        Léo • 3 ans
+                    </span>
+
+                </div>
+
+            </div>
+
+            <span class="pill pending">
+                En attente
+            </span>
+
+        </div>
+
+
+        <div class="request-body">
+
+            <div class="request-info">
+
+                <div>
+                    📅
+                    Samedi 14 Juin
+                </div>
+
+                <div>
+                    🕓
+                    16h00 - 19h00
+                </div>
+
+                <div>
+                    📍
+                    Paris 15e
+                </div>
+
+                <div>
+                    💶
+                    15 €/h
+                </div>
+
+            </div>
+
+            <p class="request-message">
+
+                Bonjour Marie,
+
+                Nous recherchons une baby-sitter douce et expérimentée
+                pour garder notre fils Léo samedi après-midi.
+
+            </p>
+
+        </div>
+
+
+        <div class="request-actions">
+
+            <button class="accept-btn">
+                Accepter
+            </button>
+
+            <button class="decline-btn">
+                Refuser
+            </button>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- ========================= -->
+    <!-- DEMANDE 2 -->
+    <!-- ========================= -->
+
+    <article class="request-card">
+
+        <div class="request-header">
+
+            <div class="person-line">
+
+                <div class="avatar">
+                    AD
+                </div>
+
+                <div>
+
+                    <strong>
+                        Alice Dubois
+                    </strong>
+
+                    <span>
+                        Emma • 6 ans
+                    </span>
+
+                </div>
+
+            </div>
+
+            <span class="pill pending">
+                En attente
+            </span>
+
+        </div>
+
+
+        <div class="request-body">
+
+            <div class="request-info">
+
+                <div>
+                    📅
+                    Mardi 17 Juin
+                </div>
+
+                <div>
+                    🕖
+                    18h30 - 22h00
+                </div>
+
+                <div>
+                    📍
+                    Paris 16e
+                </div>
+
+                <div>
+                    💶
+                    18 €/h
+                </div>
+
+            </div>
+
+            <p class="request-message">
+
+                Nous aimerions faire appel à vous pour une garde ponctuelle.
+                Votre profil correspond exactement à ce que nous recherchons.
+
+            </p>
+
+        </div>
+
+        <div class="request-actions">
+
+            <button class="accept-btn">
+                Accepter
+            </button>
+
+            <button class="decline-btn">
+                Refuser
+            </button>
+
+        </div>
+
+    </article>
+
+</section>
+
+      <!-- ==========================================================
+     PAGE : MESSAGES
+=========================================================== -->
+
+<section
+    class="page"
+    id="messages"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Conversations
+            </p>
+
+            <h1>
+                Mes messages
+            </h1>
+
+            <p class="heading-text">
+                Échangez facilement avec les parents avant et après une garde.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="messages-layout">
+
+
+        <!-- ================================= -->
+        <!-- Liste des conversations -->
+        <!-- ================================= -->
+
+        <aside class="conversation-list">
+
+
+            <article class="conversation-card active">
+
+                <div class="avatar">
+                    SL
+                </div>
+
+                <div class="conversation-content">
+
+                    <div class="conversation-top">
+
+                        <strong>
+                            Sophie Lambert
+                        </strong>
+
+                        <span>
+                            10:42
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Bonjour Marie, êtes-vous disponible samedi ?
+                    </p>
+
+                </div>
+
+                <span class="conversation-badge">
+                    2
+                </span>
+
+            </article>
+
+
+
+            <article class="conversation-card">
+
+                <div class="avatar">
+                    AD
+                </div>
+
+                <div class="conversation-content">
+
+                    <div class="conversation-top">
+
+                        <strong>
+                            Alice Dubois
+                        </strong>
+
+                        <span>
+                            Hier
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Merci beaucoup pour votre réponse 😊
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="conversation-card">
+
+                <div class="avatar">
+                    CM
+                </div>
+
+                <div class="conversation-content">
+
+                    <div class="conversation-top">
+
+                        <strong>
+                            Claire Martin
+                        </strong>
+
+                        <span>
+                            Lun.
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Nous avons confirmé la garde.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </aside>
+
+
+
+        <!-- ================================= -->
+        <!-- Fenêtre de discussion -->
+        <!-- ================================= -->
+
+        <section class="chat-window">
+
+
+            <header class="chat-header">
+
+                <div class="person-line">
+
+                    <div class="avatar">
+                        SL
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Sophie Lambert
+                        </strong>
+
+                        <span>
+                            Parent de Léo • En ligne
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <div class="chat-messages">
+
+
+                <div class="message received">
+
+                    Bonjour Marie 👋
+
+                </div>
+
+
+                <div class="message received">
+
+                    Êtes-vous disponible samedi de 16h à 19h ?
+
+                </div>
+
+
+                <div class="message sent">
+
+                    Bonjour Sophie,
+
+                    Oui, je suis disponible avec plaisir 😊
+
+                </div>
+
+
+                <div class="message received">
+
+                    Parfait !
+
+                    Merci beaucoup.
+
+                </div>
+
+            </div>
+
+
+
+            <form class="chat-input">
+
+                <input
+                    type="text"
+                    placeholder="Écrire un message...">
+
+                <button type="submit">
+
+                    Envoyer
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+</section>
+
+      <!-- ==========================================================
+     PAGE : MON PROFIL
+=========================================================== -->
+
+<section
+    class="page"
+    id="profil"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Mon profil
+            </p>
+
+            <h1>
+                Mon profil Baby-sitter
+            </h1>
+
+            <p class="heading-text">
+                Complétez votre profil afin d'inspirer confiance aux parents.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ====================================== -->
+    <!-- Photo -->
+    <!-- ====================================== -->
+
+    <section class="profile-card">
+
+        <div class="profile-photo">
+
+            <div class="profile-avatar">
+
+                MD
+
+            </div>
+
+            <button class="change-photo">
+
+                Changer la photo
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================== -->
+    <!-- Informations -->
+    <!-- ====================================== -->
+
+    <section class="profile-card">
+
+        <h2>Informations personnelles</h2>
+
+        <div class="profile-grid">
+
+            <div class="form-group">
+
+                <label>Prénom</label>
+
+                <input
+                    type="text"
+                    value="Marie">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Nom</label>
+
+                <input
+                    type="text"
+                    value="Dupont">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Âge</label>
+
+                <input
+                    type="number"
+                    value="24">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Quartier</label>
+
+                <input
+                    type="text"
+                    value="Paris 15e">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================== -->
+    <!-- Présentation -->
+    <!-- ====================================== -->
+
+    <section class="profile-card">
+
+        <h2>Présentation</h2>
+
+        <textarea rows="6">
+
+Bonjour,
+
+Je suis une baby-sitter douce, responsable et expérimentée.
+J'aime proposer des activités adaptées à l'âge des enfants.
+
+        </textarea>
+
+    </section>
+
+
+
+    <!-- ====================================== -->
+    <!-- Tarif -->
+    <!-- ====================================== -->
+
+    <section class="profile-card">
+
+        <h2>Tarif horaire</h2>
+
+        <div class="price-input">
+
+            <input
+                type="number"
+                value="15">
+
+            <span>€/heure</span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ====================================== -->
+    <!-- Compétences -->
+    <!-- ====================================== -->
+
+    <section class="profile-card">
+
+        <h2>Compétences</h2>
+
+        <div class="checkbox-list">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                Premiers secours
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                Aide aux devoirs
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox">
+
+                Permis B
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox">
+
+                Garde de nourrissons
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                Animaux acceptés
+
+            </label>
+
+        </div>
+
+    </section>
+<section class="profile-shortcuts">
+
+    <a href="#" data-view-link="planning" class="shortcut-card">
+        <span>📅 Mon planning</span>
+    </a>
+
+    <a href="#" data-view-link="disponibilites" class="shortcut-card">
+        <span>🟢 Mes disponibilités</span>
+    </a>
+
+    <a href="#" data-view-link="settings" class="shortcut-card">
+        <span>⚙️ Paramètres</span>
+    </a>
+
+</section>
+
+
+    <!-- ====================================== -->
+    <!-- Bouton -->
+    <!-- ====================================== -->
+
+    <div class="profile-actions">
+
+        <button class="save-profile">
+
+            Enregistrer mon profil
+
+        </button>
+
+    </div>
+
+</section>
+
+      <!-- ==========================================================
+     PAGE : MES DISPONIBILITÉS
+=========================================================== -->
+
+<section
+    class="page"
+    id="disponibilites"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Disponibilités
+            </p>
+
+            <h1>
+                Mes disponibilités
+            </h1>
+
+            <p class="heading-text">
+                Indiquez aux parents quand vous êtes disponible pour effectuer des gardes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Statut -->
+    <!-- ========================= -->
+
+    <div class="availability-status">
+
+        <span class="status-label">
+            Statut actuel
+        </span>
+
+        <button class="status-toggle active">
+
+            Disponible
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- Jours -->
+    <!-- ========================= -->
+
+    <div class="availability-card">
+
+        <h2>
+            Jours disponibles
+        </h2>
+
+        <div class="days-grid">
+
+            <button class="day-btn active">Lundi</button>
+
+            <button class="day-btn active">Mardi</button>
+
+            <button class="day-btn">Mercredi</button>
+
+            <button class="day-btn active">Jeudi</button>
+
+            <button class="day-btn active">Vendredi</button>
+
+            <button class="day-btn">Samedi</button>
+
+            <button class="day-btn">Dimanche</button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- Horaires -->
+    <!-- ========================= -->
+
+    <div class="availability-card">
+
+        <h2>
+
+            Horaires
+
+        </h2>
+
+        <div class="time-grid">
+
+            <div class="time-field">
+
+                <label>
+
+                    Début
+
+                </label>
+
+                <input
+                    type="time"
+                    value="08:00">
+
+            </div>
+
+            <div class="time-field">
+
+                <label>
+
+                    Fin
+
+                </label>
+
+                <input
+                    type="time"
+                    value="19:00">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- Types de garde -->
+    <!-- ========================= -->
+
+    <div class="availability-card">
+
+        <h2>
+
+            Types de garde
+
+        </h2>
+
+        <div class="checkbox-list">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                Garde en journée
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                Sortie d'école
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox">
+
+                Garde de nuit
+
+            </label>
+
+            <label>
+
+                <input
+                    type="checkbox">
+
+                Week-end
+
+            </label>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- Bouton -->
+    <!-- ========================= -->
+
+    <div class="availability-actions">
+
+        <button
+            class="save-availability">
+
+            Enregistrer mes disponibilités
+
+        </button>
+
+    </div>
+
+</section>
+
+     <!-- ==========================================================
+     PAGE : MON PLANNING
+=========================================================== -->
+
+<section
+    class="page"
+    id="planning"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Mon planning
+            </p>
+
+            <h1>
+                Mes gardes
+            </h1>
+
+            <p class="heading-text">
+                Retrouvez toutes vos gardes confirmées et les demandes en attente.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Filtres -->
+    <!-- ========================= -->
+
+    <div class="planning-filters">
+
+        <button class="planning-filter active">
+            Aujourd'hui
+        </button>
+
+        <button class="planning-filter">
+            Cette semaine
+        </button>
+
+        <button class="planning-filter">
+            Ce mois
+        </button>
+
+    </div>
+    <!-- ========================= -->
+    <!-- GARDE 1 -->
+    <!-- ========================= -->
+
+    <article class="planning-card">
+
+        <div class="planning-date">
+
+            <span>JUIN</span>
+
+            <strong>14</strong>
+
+            <small>SAM.</small>
+
+        </div>
+
+
+        <div class="planning-content">
+
+            <div class="planning-header">
+
+                <h2>
+                    Garde chez Sophie Lambert
+                </h2>
+
+                <span class="pill pill--success">
+                    Confirmée
+                </span>
+
+            </div>
+
+            <div class="planning-details">
+
+                <div>
+                    🕓 16h00 - 19h00
+                </div>
+
+                <div>
+                    👶 Léo • 3 ans
+                </div>
+
+                <div>
+                    📍 Paris 15e
+                </div>
+
+                <div>
+                    💶 15 €/heure
+                </div>
+
+            </div>
+
+            <p class="planning-note">
+
+                Les parents seront de retour vers 19h00.
+                Prévoir le goûter puis quelques jeux calmes avant leur arrivée.
+
+            </p>
+
+            <div class="planning-actions">
+
+                <button class="outline-button">
+
+                    Voir la conversation
+
+                </button>
+
+                <button class="outline-button">
+
+                    Voir les détails
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- ========================= -->
+    <!-- GARDE 2 -->
+    <!-- ========================= -->
+
+    <article class="planning-card">
+
+        <div class="planning-date">
+
+            <span>JUIN</span>
+
+            <strong>17</strong>
+
+            <small>MAR.</small>
+
+        </div>
+
+
+        <div class="planning-content">
+
+            <div class="planning-header">
+
+                <h2>
+                    Garde chez Alice Dubois
+                </h2>
+
+                <span class="pill pending">
+
+                    En attente
+
+                </span>
+
+            </div>
+
+            <div class="planning-details">
+
+                <div>
+                    🕖 18h30 - 22h00
+                </div>
+
+                <div>
+                    👧 Emma • 6 ans
+                </div>
+
+                <div>
+                    📍 Paris 16e
+                </div>
+
+                <div>
+                    💶 18 €/heure
+                </div>
+
+            </div>
+
+            <p class="planning-note">
+
+                Les parents attendent votre confirmation avant de finaliser la réservation.
+
+            </p>
+
+            <div class="planning-actions">
+
+                <button class="accept-btn">
+
+                    Accepter
+
+                </button>
+
+                <button class="decline-btn">
+
+                    Refuser
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
+
+      <!-- ==========================================================
+     PAGE : PARAMÈTRES
+=========================================================== -->
+
+<section
+    class="page"
+    id="settings"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Paramètres
+            </p>
+
+            <h1>
+                Mon compte
+            </h1>
+
+            <p class="heading-text">
+                Gérez vos préférences et la sécurité de votre compte.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Préférences -->
+    <!-- ========================= -->
+
+    <section class="settings-card">
+
+        <h2>Préférences</h2>
+
+        <div class="settings-item">
+
+            <div>
+
+                <strong>Notifications</strong>
+
+                <p>Recevoir les nouvelles demandes de garde.</p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <div class="settings-item">
+
+            <div>
+
+                <strong>Mode disponible</strong>
+
+                <p>Afficher votre profil dans les résultats de recherche.</p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Sécurité -->
+    <!-- ========================= -->
+
+    <section class="settings-card">
+
+        <h2>Sécurité</h2>
+
+        <button class="settings-button">
+
+            Modifier mon mot de passe
+
+        </button>
+
+        <button class="settings-button">
+
+            Télécharger mes données
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Déconnexion -->
+    <!-- ========================= -->
+
+    <section class="settings-card">
+
+        <h2>Compte</h2>
+
+        <button class="logout-button">
+
+            Se déconnecter
+
+        </button>
+
+    </section>
+
+</section>
     </main>
   </div>
 
-  <script src="../js/babysitter-dashboard.js"></script>
+  <script src="js/babysitter-dashboard.js"></script>
 </body>
 </html>
