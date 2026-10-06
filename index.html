@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BabySitter App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      padding: 2rem;
+    }
+    img { width: 120px; margin-bottom: 1.5rem; }
+    h1 { font-size: 2rem; margin-bottom: 2rem; text-align: center; }
+    .choices { display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 1.2rem 2.5rem;
+      background: #fff;
+      color: #333;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    a:hover { transform: translateY(-4px); }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Logo">
+  <h1>Bienvenue</h1>
+  <div class="choices">
+    <a href="parent-dashboard.html"><i class="fa-solid fa-users"></i> Espace Parent</a>
+    <a href="babysitter-dashboard.html"><i class="fa-solid fa-baby"></i> Espace Babysitter</a>
+  </div>
+</body>
+</html>
