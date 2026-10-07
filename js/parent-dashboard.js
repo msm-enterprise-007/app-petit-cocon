@@ -89,26 +89,26 @@ document.addEventListener("DOMContentLoaded", () => {
        Déconnexion (démo)
     ========================================== */
 
-    const logoutButton = document.querySelector(".logout");
+    // const logoutButton = document.querySelector(".logout");
 
-    logoutButton?.addEventListener("click", () => {
+    // logoutButton?.addEventListener("click", () => {
 
-        const confirmed = confirm(
-            "Voulez-vous vraiment vous déconnecter ?"
-        );
+    //     const confirmed = confirm(
+    //         "Voulez-vous vraiment vous déconnecter ?"
+    //     );
 
-        if (confirmed) {
+    //     if (confirmed) {
 
-            alert(
-                "Déconnexion simulée.\n\nSupabase sera connecté ultérieurement."
-            );
+    //         alert(
+    //             "Déconnexion simulée.\n\nSupabase sera connecté ultérieurement."
+    //         );
 
-            // Plus tard :
-            // supabase.auth.signOut();
+    //         Plus tard :
+    //         supabase.auth.signOut();
 
-        }
+    //     }
 
-    });
+    // });
 
     /* =========================================================
    PAGE RECHERCHE
@@ -289,5 +289,210 @@ document.querySelectorAll(".profile-button").forEach((button) => {
 
 
 filterRequests();
+
+/* =========================================================
+   PAGE MESSAGES
+========================================================= */
+
+const conversationCards = document.querySelectorAll(".conversation-card");
+const chatMessages = document.querySelector(".chat-messages");
+const chatInput = document.querySelector(".chat-input input");
+const sendButton = document.querySelector(".chat-input button");
+
+
+/* ==========================================
+   Changement de conversation
+========================================== */
+
+conversationCards.forEach((card) => {
+
+    card.addEventListener("click", () => {
+
+        conversationCards.forEach((item) => {
+
+            item.classList.remove("active");
+
+        });
+
+        card.classList.add("active");
+
+    });
+
+});
+
+
+/* ==========================================
+   Envoyer un message
+========================================== */
+
+function sendMessage() {
+
+    const text = chatInput.value.trim();
+
+    if (text === "") return;
+
+    const message = document.createElement("div");
+
+    message.className = "message sent";
+
+    message.textContent = text;
+
+    chatMessages.appendChild(message);
+
+    chatInput.value = "";
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+}
+
+
+sendButton?.addEventListener("click", sendMessage);
+
+
+chatInput?.addEventListener("keydown", (event) => {
+
+    if (event.key === "Enter") {
+
+        event.preventDefault();
+
+        sendMessage();
+
+    }
+
+});
+
+
+/* ==========================================
+   Démo : réponse automatique
+========================================== */
+
+sendButton?.addEventListener("click", () => {
+
+    setTimeout(() => {
+
+        const reply = document.createElement("div");
+
+        reply.className = "message received";
+
+        reply.textContent =
+            "Merci pour votre message. Je vous répondrai rapidement 😊";
+
+        chatMessages.appendChild(reply);
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    }, 1200);
+
+});
+
+/* ==========================================================
+   PAGE : PROFIL
+========================================================= */
+
+const profileForm = document.querySelector(".profile-form");
+
+profileForm?.addEventListener("submit", (event) => {
+
+    event.preventDefault();
+
+    alert(
+        "Profil enregistré.\n\nLes données seront sauvegardées avec Supabase."
+    );
+
+});
+
+
+/* ==========================================
+   Changement de photo (démo)
+========================================== */
+
+const changePhotoButton = document.querySelector(".change-photo");
+
+changePhotoButton?.addEventListener("click", () => {
+
+    alert(
+        "Le changement de photo sera disponible avec Supabase Storage."
+    );
+
+});
+
+/* ==========================================
+   Paramètres
+========================================== */
+
+const notificationToggle = document.getElementById(
+    "notifications-toggle"
+);
+
+notificationToggle?.addEventListener("change", () => {
+
+    alert(
+
+        notificationToggle.checked
+            ? "Les notifications sont activées."
+            : "Les notifications sont désactivées."
+
+    );
+
+});
+
+
+const emailToggle = document.getElementById(
+    "email-toggle"
+);
+
+emailToggle?.addEventListener("change", () => {
+
+    alert(
+
+        emailToggle.checked
+            ? "Les notifications par e-mail sont activées."
+            : "Les notifications par e-mail sont désactivées."
+
+    );
+
+});
+
+
+document.querySelectorAll(".settings-button").forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        alert(
+
+            `"${button.textContent.trim()}" sera disponible prochainement.`
+
+        );
+
+    });
+
+});
+
+
+const logoutButton = document.querySelector(".logout-button");
+
+logoutButton?.addEventListener("click", () => {
+
+    const confirmed = confirm(
+
+        "Voulez-vous vraiment vous déconnecter ?"
+
+    );
+
+    if (confirmed) {
+
+        alert(
+
+            "Déconnexion simulée.\n\nSupabase sera connecté ultérieurement."
+
+        );
+
+        // Plus tard :
+        // supabase.auth.signOut();
+
+    }
+
+});
+
 
 });

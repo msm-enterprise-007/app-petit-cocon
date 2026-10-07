@@ -1548,67 +1548,973 @@
 
 
 
-        <!-- =============================== -->
-        <!-- MESSAGES -->
-        <!-- =============================== -->
+        <!-- ==========================================================
+     PAGE : MESSAGES
+=========================================================== -->
 
-        <section
-            class="placeholder-page"
-            id="messages"
-            data-page
-            hidden>
+<section
+    class="page"
+    id="messages"
+    data-page
+    hidden>
 
-            <h2>Messages</h2>
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Messages
+            </p>
+
+            <h1>
+                Conversations
+            </h1>
+
+            <p class="heading-text">
+                Échangez avec les baby-sitters avant, pendant ou après une garde.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="messages-layout">
+
+
+        <!-- ====================================== -->
+        <!-- Liste des conversations -->
+        <!-- ====================================== -->
+
+        <aside class="conversation-list">
+
+
+            <!-- Conversation -->
+
+            <article class="conversation-card active">
+
+                <div class="avatar">
+                    MD
+                </div>
+
+                <div class="conversation-content">
+
+                    <div class="conversation-top">
+
+                        <strong>
+                            Marie Dupont
+                        </strong>
+
+                        <span>
+                            10:42
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Bonjour, je confirme ma disponibilité 😊
+                    </p>
+
+                </div>
+
+                <div class="conversation-badge">
+                    2
+                </div>
+
+            </article>
+
+
+
+            <article class="conversation-card">
+
+                <div class="avatar">
+                    CM
+                </div>
+
+                <div class="conversation-content">
+
+                    <div class="conversation-top">
+
+                        <strong>
+                            Clara Martin
+                        </strong>
+
+                        <span>
+                            Hier
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Merci pour votre confiance.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="conversation-card">
+
+                <div class="avatar">
+                    IB
+                </div>
+
+                <div class="conversation-content">
+
+                    <div class="conversation-top">
+
+                        <strong>
+                            Inès Bernard
+                        </strong>
+
+                        <span>
+                            Lun.
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Désolée, je ne suis pas disponible.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </aside>
+
+
+
+        <!-- ====================================== -->
+        <!-- Fenêtre de discussion -->
+        <!-- ====================================== -->
+
+        <section class="chat-window">
+
+
+            <!-- Header -->
+
+            <header class="chat-header">
+
+                <div class="person-line">
+
+                    <div class="avatar">
+                        MD
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Marie Dupont
+                        </strong>
+
+                        <span>
+                            En ligne
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- Messages -->
+
+            <div class="chat-messages">
+
+                <div class="message received">
+
+                    Bonjour 👋
+
+                    Merci pour votre demande de garde.
+
+                </div>
+
+
+                <div class="message sent">
+
+                    Bonjour Marie,
+
+                    Merci pour votre réponse.
+
+                </div>
+
+
+                <div class="message received">
+
+                    Je suis disponible samedi de 16h à 19h.
+
+                </div>
+
+
+                <div class="message sent">
+
+                    Parfait !
+
+                    À samedi 😊
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Zone de saisie -->
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    placeholder="Écrire un message...">
+
+                <button
+                    type="button">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
 
         </section>
 
+    </div>
 
-
-        <!-- =============================== -->
-        <!-- PLANNING -->
-        <!-- =============================== -->
-
-        <section
-            class="placeholder-page"
-            id="planning"
-            data-page
-            hidden>
-
-            <h2>Planning</h2>
-
-        </section>
+</section>
 
 
 
-        <!-- =============================== -->
-        <!-- PROFIL -->
-        <!-- =============================== -->
+      <!-- ==========================================================
+     PAGE : PLANNING
+=========================================================== -->
 
-        <section
-            class="placeholder-page"
-            id="profil"
-            data-page
-            hidden>
+<section
+    class="page"
+    id="planning"
+    data-page
+    hidden>
 
-            <h2>Mon profil</h2>
+    <div class="page-heading">
 
-        </section>
+        <div>
+
+            <p class="eyebrow">
+                Planning
+            </p>
+
+            <h1>
+                Mes gardes
+            </h1>
+
+            <p class="heading-text">
+                Consultez vos gardes à venir et retrouvez l'historique de vos réservations.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Filtres -->
+    <!-- ========================= -->
+
+    <div class="planning-filters">
+
+        <button
+            class="planning-filter active"
+            data-filter="all">
+
+            Toutes
+
+        </button>
+
+        <button
+            class="planning-filter"
+            data-filter="upcoming">
+
+            À venir
+
+        </button>
+
+        <button
+            class="planning-filter"
+            data-filter="completed">
+
+            Terminées
+
+        </button>
+
+    </div>
 
 
 
-        <!-- =============================== -->
-        <!-- PARAMÈTRES -->
-        <!-- =============================== -->
+    <!-- ========================= -->
+    <!-- Garde 1 -->
+    <!-- ========================= -->
 
-        <section
-            class="placeholder-page"
-            id="settings"
-            data-page
-            hidden>
+    <article
+        class="planning-card"
+        data-status="upcoming">
 
-            <h2>Paramètres</h2>
+        <div class="planning-date">
 
-        </section>
+            <span>JUIN</span>
+
+            <strong>14</strong>
+
+            <small>SAM.</small>
+
+        </div>
+
+
+        <div class="planning-content">
+
+            <div class="planning-header">
+
+                <div>
+
+                    <h2>
+                        Garde d'Emma
+                    </h2>
+
+                    <span class="pill pending">
+                        À venir
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="planning-details">
+
+                <div>
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    16h00 - 19h00
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Marie Dupont
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Paris 15e
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    15 €/h
+
+                </div>
+
+            </div>
+
+
+            <p class="planning-note">
+
+                Pensez à préparer les affaires d'Emma avant l'arrivée de la baby-sitter.
+
+            </p>
+
+
+            <div class="planning-actions">
+
+                <button class="profile-button">
+
+                    Voir le profil
+
+                </button>
+
+                <button class="contact-button">
+
+                    <i class="fa-regular fa-comments"></i>
+
+                    Contacter
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- ========================= -->
+    <!-- Garde 2 -->
+    <!-- ========================= -->
+
+    <article
+        class="planning-card"
+        data-status="completed">
+
+        <div class="planning-date">
+
+            <span>JUIN</span>
+
+            <strong>07</strong>
+
+            <small>SAM.</small>
+
+        </div>
+
+
+        <div class="planning-content">
+
+            <div class="planning-header">
+
+                <div>
+
+                    <h2>
+                        Garde de Lucas
+                    </h2>
+
+                    <span class="pill pill--success">
+                        Terminée
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="planning-details">
+
+                <div>
+
+                    <i class="fa-regular fa-clock"></i>
+
+                    18h30 - 22h00
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-user"></i>
+
+                    Clara Martin
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Paris 16e
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    18 €/h
+
+                </div>
+
+            </div>
+
+
+            <p class="planning-note">
+
+                La garde s'est parfaitement déroulée. Vous pouvez laisser un avis sur cette baby-sitter.
+
+            </p>
+
+
+            <div class="planning-actions">
+
+                <button class="profile-button">
+
+                    Laisser un avis
+
+                </button>
+
+                <button class="contact-button">
+
+                    Réserver à nouveau
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
+
+
+
+        <!-- ==========================================================
+     PAGE : MON PROFIL
+=========================================================== -->
+
+<section
+    class="page"
+    id="profil"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Mon profil
+            </p>
+
+            <h1>
+                Mon profil
+            </h1>
+
+            <p class="heading-text">
+                Gérez vos informations personnelles afin que les baby-sitters puissent mieux vous connaître.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Photo -->
+    <!-- ========================= -->
+
+    <section class="profile-card">
+
+        <div class="profile-photo">
+
+            <div class="profile-avatar">
+
+                JD
+
+            </div>
+
+            <button
+                class="change-photo"
+                type="button">
+
+                <i class="fa-solid fa-camera"></i>
+
+                Modifier la photo
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Informations -->
+    <!-- ========================= -->
+
+    <section class="profile-card">
+
+        <h2>
+            Informations personnelles
+        </h2>
+
+        <div class="profile-grid">
+
+            <div class="form-group">
+
+                <label for="parent-firstname">
+                    Prénom
+                </label>
+
+                <input
+                    type="text"
+                    id="parent-firstname"
+                    value="Jean">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="parent-lastname">
+                    Nom
+                </label>
+
+                <input
+                    type="text"
+                    id="parent-lastname"
+                    value="Dupont">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="parent-email">
+                    Adresse e-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="parent-email"
+                    value="jean.dupont@email.com">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="parent-phone">
+                    Téléphone
+                </label>
+
+                <input
+                    type="tel"
+                    id="parent-phone"
+                    value="06 12 34 56 78">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="parent-city">
+                    Ville
+                </label>
+
+                <input
+                    type="text"
+                    id="parent-city"
+                    value="Paris 15e">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="parent-address">
+                    Adresse
+                </label>
+
+                <input
+                    type="text"
+                    id="parent-address"
+                    value="15 rue des Lilas">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Enfants -->
+    <!-- ========================= -->
+
+    <section class="profile-card">
+
+        <h2>
+            Mes enfants
+        </h2>
+
+        <div class="profile-grid">
+
+            <div class="form-group">
+
+                <label for="child-name">
+                    Prénom
+                </label>
+
+                <input
+                    type="text"
+                    id="child-name"
+                    value="Emma">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="child-age">
+                    Âge
+                </label>
+
+                <input
+                    type="text"
+                    id="child-age"
+                    value="6 ans">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Besoins -->
+    <!-- ========================= -->
+
+    <section class="profile-card">
+
+        <h2>
+            Vos besoins
+        </h2>
+
+        <div class="form-group">
+
+            <label for="parent-description">
+                Décrivez vos attentes
+            </label>
+
+            <textarea
+                id="parent-description"
+                placeholder="Décrivez votre famille, vos habitudes et ce que vous recherchez chez une baby-sitter...">Nous recherchons une baby-sitter bienveillante, ponctuelle et expérimentée pour garder notre fille principalement en soirée et certains week-ends.</textarea>
+
+        </div>
+
+    </section>
+
+<!-- ========================================= -->
+<!-- RACCOURCIS -->
+<!-- ========================================= -->
+
+<div class="profile-shortcuts">
+
+    <a
+        href="#"
+        class="shortcut-card"
+        data-view-link="demandes">
+
+        <i class="fa-regular fa-file-lines"></i>
+
+        <span>Mes demandes</span>
+
+    </a>
+
+    <a
+        href="#"
+        class="shortcut-card"
+        data-view-link="planning">
+
+        <i class="fa-regular fa-calendar-days"></i>
+
+        <span>Planning</span>
+
+    </a>
+
+    <a
+        href="#"
+        class="shortcut-card"
+        data-view-link="settings">
+
+        <i class="fa-solid fa-gear"></i>
+
+        <span>Paramètres</span>
+
+    </a>
+
+</div>
+
+    <!-- ========================= -->
+    <!-- Bouton -->
+    <!-- ========================= -->
+
+    <div class="profile-actions">
+
+        <button
+            class="save-profile"
+            type="button">
+
+            <i class="fa-solid fa-floppy-disk"></i>
+
+            Enregistrer les modifications
+
+        </button>
+
+    </div>
+
+</section>
+
+
+       <!-- ==========================================================
+     PAGE : PARAMÈTRES
+=========================================================== -->
+
+<section
+    class="page"
+    id="settings"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Paramètres
+            </p>
+
+            <h1>
+                Paramètres du compte
+            </h1>
+
+            <p class="heading-text">
+                Gérez vos préférences, vos notifications et les paramètres de votre compte.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Notifications -->
+    <!-- ========================= -->
+
+    <section class="settings-card">
+
+        <h2>
+            Notifications
+        </h2>
+
+        <div class="settings-item">
+
+            <div>
+
+                <strong>
+                    Recevoir les notifications
+                </strong>
+
+                <p>
+                    Être informé des nouvelles demandes et des nouveaux messages.
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="notifications-toggle"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <div class="settings-item">
+
+            <div>
+
+                <strong>
+                    Notifications par e-mail
+                </strong>
+
+                <p>
+                    Recevoir un e-mail lors d'une nouvelle activité importante.
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="email-toggle"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Préférences -->
+    <!-- ========================= -->
+
+    <section class="settings-card">
+
+        <h2>
+            Préférences
+        </h2>
+
+        <button
+            class="settings-button"
+            type="button">
+
+            Modifier mon mot de passe
+
+        </button>
+
+        <button
+            class="settings-button"
+            type="button">
+
+            Confidentialité
+
+        </button>
+
+        <button
+            class="settings-button"
+            type="button">
+
+            Centre d'aide
+
+        </button>
+
+        <button
+            class="settings-button"
+            type="button">
+
+            Conditions d'utilisation
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Déconnexion -->
+    <!-- ========================= -->
+
+    <section class="settings-card">
+
+        <h2>
+            Compte
+        </h2>
+
+        <button
+            class="logout-button"
+            type="button">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Déconnexion
+
+        </button>
+
+    </section>
+
+</section>
 
     </main>
 
