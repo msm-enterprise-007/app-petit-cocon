@@ -643,35 +643,908 @@
 
 
 
-        <!-- =============================== -->
-        <!-- RECHERCHE -->
-        <!-- =============================== -->
+        <!-- ==========================================================
+     PAGE : RECHERCHE DE BABY-SITTERS
+=========================================================== -->
 
-        <section
-            class="placeholder-page"
-            id="recherche"
-            data-page
-            hidden>
+<section
+    class="page"
+    id="recherche"
+    data-page
+    hidden>
 
-            <h2>Recherche Baby-sitters</h2>
+    <div class="page-heading">
 
-        </section>
+        <div>
+
+            <p class="eyebrow">
+                Recherche
+            </p>
+
+            <h1>
+                Trouver une baby-sitter
+            </h1>
+
+            <p class="heading-text">
+                Découvrez les profils disponibles près de chez vous et trouvez la personne qui correspond à vos besoins.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Barre de recherche -->
+    <!-- ========================= -->
+
+    <section class="search-panel">
+
+        <div class="search-bar">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="babysitter-search"
+                placeholder="Rechercher par prénom, quartier ou compétence..."
+                aria-label="Rechercher une baby-sitter">
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Filtres -->
+    <!-- ========================= -->
+
+    <section class="search-filters">
+
+        <button
+            class="search-filter active"
+            type="button"
+            data-filter="all">
+
+            Toutes
+
+        </button>
+
+        <button
+            class="search-filter"
+            type="button"
+            data-filter="available">
+
+            <i class="fa-regular fa-calendar-check"></i>
+            Disponible
+
+        </button>
+
+        <button
+            class="search-filter"
+            type="button"
+            data-filter="nearby">
+
+            <i class="fa-solid fa-location-dot"></i>
+            À proximité
+
+        </button>
+
+        <button
+            class="search-filter"
+            type="button"
+            data-filter="experienced">
+
+            <i class="fa-solid fa-star"></i>
+            Expérimentée
+
+        </button>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Résultats -->
+    <!-- ========================= -->
+
+    <div class="search-results-heading">
+
+        <div>
+
+            <h2>
+                Baby-sitters disponibles
+            </h2>
+
+            <p>
+                18 profils correspondent à votre recherche
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <section class="babysitter-grid">
+
+
+        <!-- ========================= -->
+        <!-- PROFIL 1 -->
+        <!-- ========================= -->
+
+        <article
+            class="babysitter-card"
+            data-name="marie dupont"
+            data-location="paris 15e"
+            data-available="true"
+            data-experienced="true">
+
+            <div class="babysitter-card-top">
+
+                <div class="babysitter-avatar">
+
+                    MD
+
+                </div>
+
+                <div class="babysitter-status">
+
+                    <span class="availability-dot"></span>
+
+                    Disponible
+
+                </div>
+
+            </div>
+
+
+            <div class="babysitter-card-content">
+
+                <div class="babysitter-name-row">
+
+                    <div>
+
+                        <h3>
+                            Marie Dupont
+                        </h3>
+
+                        <p class="babysitter-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Paris 15e
+
+                        </p>
+
+                    </div>
+
+                    <div class="babysitter-price">
+
+                        <strong>
+                            15 €
+                        </strong>
+
+                        <span>
+                            / heure
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="babysitter-description">
+
+                    Douce, sérieuse et expérimentée, j'aime proposer des activités adaptées à l'âge des enfants.
+
+                </p>
+
+
+                <div class="babysitter-tags">
+
+                    <span>
+                        <i class="fa-solid fa-shield-heart"></i>
+                        Premiers secours
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-book-open"></i>
+                        Aide aux devoirs
+                    </span>
+
+                </div>
+
+
+                <div class="babysitter-rating">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <strong>
+                        4,9
+                    </strong>
+
+                    <span>
+                        12 avis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="babysitter-actions">
+
+                <button
+                    class="profile-button"
+                    type="button">
+
+                    Voir le profil
+
+                </button>
+
+                <button
+                    class="contact-button"
+                    type="button">
+
+                    <i class="fa-regular fa-comments"></i>
+
+                    Contacter
+
+                </button>
+
+            </div>
+
+        </article>
 
 
 
-        <!-- =============================== -->
-        <!-- DEMANDES -->
-        <!-- =============================== -->
+        <!-- ========================= -->
+        <!-- PROFIL 2 -->
+        <!-- ========================= -->
 
-        <section
-            class="placeholder-page"
-            id="demandes"
-            data-page
-            hidden>
+        <article
+            class="babysitter-card"
+            data-name="clara martin"
+            data-location="paris 16e"
+            data-available="true"
+            data-experienced="true">
 
-            <h2>Mes demandes</h2>
+            <div class="babysitter-card-top">
 
-        </section>
+                <div class="babysitter-avatar">
+
+                    CM
+
+                </div>
+
+                <div class="babysitter-status">
+
+                    <span class="availability-dot"></span>
+
+                    Disponible
+
+                </div>
+
+            </div>
+
+
+            <div class="babysitter-card-content">
+
+                <div class="babysitter-name-row">
+
+                    <div>
+
+                        <h3>
+                            Clara Martin
+                        </h3>
+
+                        <p class="babysitter-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Paris 16e
+
+                        </p>
+
+                    </div>
+
+                    <div class="babysitter-price">
+
+                        <strong>
+                            18 €
+                        </strong>
+
+                        <span>
+                            / heure
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="babysitter-description">
+
+                    Étudiante en psychologie, attentive et patiente. Disponible en soirée et le week-end.
+
+                </p>
+
+
+                <div class="babysitter-tags">
+
+                    <span>
+                        <i class="fa-solid fa-child-reaching"></i>
+                        Nourrissons
+                    </span>
+
+                    <span>
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Week-end
+                    </span>
+
+                </div>
+
+
+                <div class="babysitter-rating">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <strong>
+                        4,8
+                    </strong>
+
+                    <span>
+                        9 avis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="babysitter-actions">
+
+                <button
+                    class="profile-button"
+                    type="button">
+
+                    Voir le profil
+
+                </button>
+
+                <button
+                    class="contact-button"
+                    type="button">
+
+                    <i class="fa-regular fa-comments"></i>
+
+                    Contacter
+
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- ========================= -->
+        <!-- PROFIL 3 -->
+        <!-- ========================= -->
+
+        <article
+            class="babysitter-card"
+            data-name="ines bernard"
+            data-location="paris 14e"
+            data-available="false"
+            data-experienced="false">
+
+            <div class="babysitter-card-top">
+
+                <div class="babysitter-avatar">
+
+                    IB
+
+                </div>
+
+                <div class="babysitter-status babysitter-status--busy">
+
+                    Indisponible aujourd'hui
+
+                </div>
+
+            </div>
+
+
+            <div class="babysitter-card-content">
+
+                <div class="babysitter-name-row">
+
+                    <div>
+
+                        <h3>
+                            Inès Bernard
+                        </h3>
+
+                        <p class="babysitter-location">
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Paris 14e
+
+                        </p>
+
+                    </div>
+
+                    <div class="babysitter-price">
+
+                        <strong>
+                            14 €
+                        </strong>
+
+                        <span>
+                            / heure
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="babysitter-description">
+
+                    Dynamique et créative, j'apprécie particulièrement les activités manuelles et les sorties avec les enfants.
+
+                </p>
+
+
+                <div class="babysitter-tags">
+
+                    <span>
+                        <i class="fa-solid fa-palette"></i>
+                        Activités créatives
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-dog"></i>
+                        Animaux acceptés
+                    </span>
+
+                </div>
+
+
+                <div class="babysitter-rating">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <strong>
+                        4,7
+                    </strong>
+
+                    <span>
+                        6 avis
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="babysitter-actions">
+
+                <button
+                    class="profile-button"
+                    type="button">
+
+                    Voir le profil
+
+                </button>
+
+                <button
+                    class="contact-button"
+                    type="button">
+
+                    <i class="fa-regular fa-comments"></i>
+
+                    Contacter
+
+                </button>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- Aucun résultat -->
+    <!-- ========================= -->
+
+    <div
+        class="no-results"
+        id="no-results"
+        hidden>
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <h3>
+            Aucun profil trouvé
+        </h3>
+
+        <p>
+            Essayez de modifier votre recherche ou vos filtres.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+        <!-- ==========================================================
+     PAGE : MES DEMANDES
+=========================================================== -->
+
+<section
+    class="page"
+    id="demandes"
+    data-page
+    hidden>
+
+    <div class="page-heading">
+
+        <div>
+
+            <p class="eyebrow">
+                Mes demandes
+            </p>
+
+            <h1>
+                Demandes envoyées
+            </h1>
+
+            <p class="heading-text">
+                Retrouvez toutes vos demandes de garde et suivez leur statut en temps réel.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- Filtres -->
+    <!-- ========================= -->
+
+    <div class="request-filters">
+
+        <button
+            class="filter-button active"
+            data-status="all">
+
+            Toutes
+
+        </button>
+
+        <button
+            class="filter-button"
+            data-status="pending">
+
+            En attente
+
+        </button>
+
+        <button
+            class="filter-button"
+            data-status="accepted">
+
+            Acceptées
+
+        </button>
+
+        <button
+            class="filter-button"
+            data-status="declined">
+
+            Refusées
+
+        </button>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- Demande 1 -->
+    <!-- ========================= -->
+
+    <article
+        class="request-card"
+        data-status="pending">
+
+        <div class="request-header">
+
+            <div class="person-line">
+
+                <div class="avatar">
+
+                    MD
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Marie Dupont
+                    </strong>
+
+                    <span>
+                        Paris 15e
+                    </span>
+
+                </div>
+
+            </div>
+
+            <span class="pill pending">
+
+                En attente
+
+            </span>
+
+        </div>
+
+
+        <div class="request-body">
+
+            <div class="request-info">
+
+                <div>
+                    <i class="fa-regular fa-calendar"></i>
+                    Samedi 14 juin
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                    16h00 - 19h00
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-children"></i>
+                    Emma • 4 ans
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wallet"></i>
+                    15 €/h
+                </div>
+
+            </div>
+
+            <p class="request-message">
+
+                Bonjour Marie, nous aimerions vous confier la garde de notre fille samedi après-midi. Êtes-vous disponible ?
+
+            </p>
+
+        </div>
+
+
+        <div class="request-actions">
+
+            <button class="cancel-request">
+
+                Annuler
+
+            </button>
+
+            <button class="message-request">
+
+                <i class="fa-regular fa-comments"></i>
+
+                Message
+
+            </button>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- ========================= -->
+    <!-- Demande 2 -->
+    <!-- ========================= -->
+
+    <article
+        class="request-card"
+        data-status="accepted">
+
+        <div class="request-header">
+
+            <div class="person-line">
+
+                <div class="avatar">
+
+                    CM
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Clara Martin
+                    </strong>
+
+                    <span>
+                        Paris 16e
+                    </span>
+
+                </div>
+
+            </div>
+
+            <span class="pill pill--success">
+
+                Acceptée
+
+            </span>
+
+        </div>
+
+
+        <div class="request-body">
+
+            <div class="request-info">
+
+                <div>
+                    <i class="fa-regular fa-calendar"></i>
+                    Mardi 17 juin
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                    18h30 - 22h00
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-children"></i>
+                    Lucas • 6 ans
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wallet"></i>
+                    18 €/h
+                </div>
+
+            </div>
+
+            <p class="request-message">
+
+                Votre demande a été acceptée. Vous pouvez maintenant échanger avec Clara pour préparer la garde.
+
+            </p>
+
+        </div>
+
+
+        <div class="request-actions">
+
+            <button class="profile-button">
+
+                Voir le profil
+
+            </button>
+
+            <button class="contact-button">
+
+                <i class="fa-regular fa-comments"></i>
+
+                Contacter
+
+            </button>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- ========================= -->
+    <!-- Demande 3 -->
+    <!-- ========================= -->
+
+    <article
+        class="request-card"
+        data-status="declined">
+
+        <div class="request-header">
+
+            <div class="person-line">
+
+                <div class="avatar">
+
+                    IB
+
+                </div>
+
+                <div>
+
+                    <strong>
+                        Inès Bernard
+                    </strong>
+
+                    <span>
+                        Paris 14e
+                    </span>
+
+                </div>
+
+            </div>
+
+            <span class="pill declined">
+
+                Refusée
+
+            </span>
+
+        </div>
+
+
+        <div class="request-body">
+
+            <div class="request-info">
+
+                <div>
+                    <i class="fa-regular fa-calendar"></i>
+                    Vendredi 20 juin
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                    19h00 - 23h00
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-children"></i>
+                    Chloé • 5 ans
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wallet"></i>
+                    16 €/h
+                </div>
+
+            </div>
+
+            <p class="request-message">
+
+                Cette baby-sitter n'était malheureusement plus disponible à cette date.
+
+            </p>
+
+        </div>
+
+
+        <div class="request-actions">
+
+            <button class="profile-button">
+
+                Voir le profil
+
+            </button>
+
+            <button class="contact-button">
+
+                Trouver une autre baby-sitter
+
+            </button>
+
+        </div>
+
+    </article>
+
+</section>
 
 
 
